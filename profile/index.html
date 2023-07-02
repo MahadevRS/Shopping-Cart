@@ -1,25 +1,46 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
-<html>
-  <head>
-    <meta charset="utf-8" />
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>Profile</title>
-    <meta name="description" content="" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="" />
-  </head>
-  <body>
-    <!--[if lt IE 7]>
-      <p class="browsehappy">
-        You are using an <strong>outdated</strong> browser. Please
-        <a href="#">upgrade your browser</a> to improve your experience.
-      </p>
-    <![endif]-->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <a href="../index.html">Shopping Cart</a>
+        </div>
+    </nav>
+    <div class="container" id="container1">
+        <div style="font-size: 30px; margin-bottom: 20px; text-align: center; font-weight: 600;">My Profile</div>
+        <form class="inputs" id="inputs1">
+            <input type="text" placeholder="First Name" id="first-name">
+            <input type="text" placeholder="langName" id="last-name">
+            <div>
+                <button type="submit">Save Info</button>
+                <span id="message1" style="width: fit-content;margin-left: 20px;"></span>
+            </div>
+        </form>
+    </div>
 
-    <script src="" async defer></script>
-  </body>
+    <div class="container" id="container2">
+        <div style="font-size: 30px; margin-bottom: 20px; text-align: center; font-weight: 600;">Edit Password</div>
+        <form class="inputs" id="inputs2">
+            <input type="password" placeholder="Old Password" id="old-password">
+            <input type="password" placeholder="New Password" id="new-password">
+            <input type="password" placeholder="Confirm New Password" id="confirm-password">
+            <div class="btns">
+                <button type="submit" id="change-password">Change Password</button>
+                <span style="width: fit-content; margin-left: 20px;" id="message2"></span>
+                <button id="logout">Logout</button>
+            </div>
+        </form>
+
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
 </html>

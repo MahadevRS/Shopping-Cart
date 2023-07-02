@@ -1,3 +1,9 @@
-// myProducts.filter((item)=>item.title.includes(search.value))
+const loginBtn=document.getElementById('login');
+const signupBtn=document.getElementById('signup');
 
-// myCartProductArray = myProducts.filter((item)=> myCartIDs.includes(item.id))
+loginBtn.addEventListener('click',()=>{
+    location.href='./Login/index.html';
+})
+signupBtn.addEventListener('click',()=>{
+    location.href='./Signup/index.html';
+})
